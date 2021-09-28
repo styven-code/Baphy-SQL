@@ -20,6 +20,6 @@ select category.name_category, sum(client_book.stock) as unidades_por_categoria
 from baphystore.book 
 inner join baphystore.client_book on client_book.id_book = book.id
 inner join baphystore.category on category.id = book.id_category
-group by category.nama_category;
+group by category.name_category;
 
 

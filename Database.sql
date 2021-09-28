@@ -6,7 +6,7 @@ CREATE TABLE Baphystore.book(
     author varchar(100) NOT NULL, 
     language varchar(20) NOT NULL, 
     edition varchar(50) NOT NULL, 
-    isbn int8 NOT NULL, 
+    isbn varchar(14) NOT NULL, 
     id_category int NOT NULL, 
     CONSTRAINT pk_book PRIMARY KEY (id), 
     CONSTRAINT uk_Book UNIQUE (isbn, id_category)
@@ -28,7 +28,7 @@ CREATE TABLE Baphystore.category(
 );
 COMMENT ON TABLE Baphystore.category IS 'Entidad de categoría del libro';
 COMMENT ON COLUMN Baphystore.category.id IS 'Llave primaria de la entidad categoría';
-COMMENT ON COLUMN Baphystore.category.nama_category IS 'NoNombre de la categoría del libro';
+COMMENT ON COLUMN Baphystore.category.name_category IS 'NoNombre de la categoría del libro';
 COMMENT ON COLUMN Baphystore.category.Format IS 'Formato del libro (físico u online)';
 
 CREATE TABLE Baphystore.client(
