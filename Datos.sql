@@ -1,11 +1,11 @@
 /*Tabla tipo de documento*/
-insert into Baphystore.document_type (initials, document_name) VALUES ('CC','Cédula de ciudadanía');
-insert into Baphystore.document_type (initials, document_name) VALUES ('TI','Tarjeta de identidad ');
-insert into Baphystore.document_type (initials, document_name) VALUES ('CE','Cédula de extranjería');
-insert into Baphystore.document_type (initials, document_name) VALUES ('TE','Tarjeta de extranjería');
-insert into Baphystore.document_type (initials, document_name) VALUES ('NIT','Número de Identificación Tributaria');
-insert into Baphystore.document_type (initials, document_name) VALUES ('PST','Pasaporte');
-insert into Baphystore.document_type (initials, document_name) VALUES ('PEP','Permiso Especial de Permanencia');
+insert into Baphystore.document_type (initials, document_name) values ('CC','Cédula de ciudadanía');
+insert into Baphystore.document_type (initials, document_name) values ('TI','Tarjeta de identidad ');
+insert into Baphystore.document_type (initials, document_name) values ('CE','Cédula de extranjería');
+insert into Baphystore.document_type (initials, document_name) values ('TE','Tarjeta de extranjería');
+insert into Baphystore.document_type (initials, document_name) values ('NIT','Número de Identificación Tributaria');
+insert into Baphystore.document_type (initials, document_name) values ('PST','Pasaporte');
+insert into Baphystore.document_type (initials, document_name) values ('PEP','Permiso Especial de Permanencia');
 select * from Baphystore.document_type;
 
 /*Tabla de categerio y formato*/
